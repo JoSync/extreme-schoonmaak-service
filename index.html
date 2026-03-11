@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Extreme Schoonmaak Service | Specialist in Reiniging</title>
+    <title>Extreme Schoonmaak Service | Discreet & Professioneel</title>
     <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -15,14 +15,15 @@
         * { box-sizing: border-box; margin: 0; padding: 0; }
         body { font-family: 'Inter', sans-serif; color: #344563; line-height: 1.6; }
 
-        /* HERO SECTIE - Met robuuste afbeelding */
+        /* HERO SECTIE - Gebruikt jouw Foto1.jpg */
         .hero { 
             position: relative;
-            background-color: #222; /* Fallback kleur */
-            background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)), 
-                              url('https://images.unsplash.com/photo-1584622650111-993a426fbf0a?q=80&w=2000&auto=format&fit=crop');
+            background-color: #1a1a1a;
+            /* De link naar jouw foto in de GitHub repo */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
+                              url('Foto1.jpg');
             background-size: cover;
-            background-position: center;
+            background-position: center 30%; /* Iets meer focus op de gezichten */
             color: white; 
             padding: 160px 0; 
             text-align: center;
@@ -36,13 +37,15 @@
             margin-bottom: 25px; 
             line-height: 1.1;
             font-weight: 700;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
         }
 
         .hero p { 
             font-size: 1.3rem; 
             max-width: 750px; 
             margin: 0 auto 40px; 
-            opacity: 0.9; 
+            opacity: 0.95; 
+            text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
         }
 
         .btn { 
@@ -81,12 +84,14 @@
 
         .usp-item strong { display: block; font-size: 1.2rem; color: #4c9aff; }
 
-        /* Overige secties */
+        /* Expertise sectie */
         .section { padding: 80px 0; }
         .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; margin-top: 40px; }
-        .card { padding: 40px; border-radius: 12px; background: #f4f5f7; border-bottom: 6px solid var(--primary); }
-        .card h3 { margin-bottom: 15px; font-family: 'Lexend', sans-serif; }
+        .card { padding: 40px; border-radius: 12px; background: #f4f5f7; border-bottom: 6px solid var(--primary); transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); background: #fff; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card h3 { margin-bottom: 15px; font-family: 'Lexend', sans-serif; color: var(--secondary); }
 
+        /* Contactformulier */
         form { background: #fff; padding: 40px; border-radius: 12px; border: 1px solid #ebecf0; max-width: 600px; margin: 0 auto; }
         input, textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px solid #dfe1e6; border-radius: 5px; font-size: 1rem; }
         
@@ -108,31 +113,31 @@
         <div class="usp-item"><strong>Team van 5</strong>Specialisten</div>
         <div class="usp-item"><strong>Heel NL</strong>Landelijke dekking</div>
         <div class="usp-item"><strong>100% Discreet</strong>Onopvallend materieel</div>
-        <div class="usp-item"><strong>Binnen 24u</strong>Snel antwoord</div>
+        <div class="usp-item"><strong>Binnen 24u</strong>Snelle reactie</div>
     </div>
 </section>
 
 <section class="section container" id="diensten">
-    <h2 style="text-align:center; font-size: 2.5rem; font-family: 'Lexend';">Onze Expertise</h2>
+    <h2 style="text-align:center; font-size: 2.5rem; font-family: 'Lexend'; color: var(--secondary);">Onze Expertise</h2>
     <div class="grid">
         <div class="card">
             <h3>Extreme schoonmaak</h3>
-            <p>Reiniging van zwaar vervuilde woningen (bijv. na verwaarlozing). Wij maken de ruimte weer volledig bewoonbaar.</p>
+            <p>Grondige reiniging van zwaar vervuilde woningen en panden. Wij verwijderen alle sporen van vervuiling en maken de ruimte weer leefbaar.</p>
         </div>
         <div class="card">
             <h3>Hoarder woningen</h3>
-            <p>Respectvolle aanpak bij verzamelproblematiek. Wij ontruimen, sorteren en reinigen de woning van top tot teen.</p>
+            <p>Respectvolle aanpak bij verzamelproblematiek. Wij ontruimen, sorteren en reinigen de woning met oog voor de bewoner en eigenaar.</p>
         </div>
         <div class="card">
             <h3>Objectreiniging</h3>
-            <p>Specifieke reiniging van objecten, voertuigen of ruimtes die door extreme vervuiling onbruikbaar zijn geworden.</p>
+            <p>Specifieke reiniging van objecten, ruimtes of voertuigen die door extreme omstandigheden onbruikbaar zijn geworden.</p>
         </div>
     </div>
 </section>
 
 <section id="contact" class="section" style="background-color: #f4f5f7;">
     <div class="container">
-        <h2 style="text-align:center; margin-bottom: 30px; font-family: 'Lexend';">Vrijblijvende Aanvraag</h2>
+        <h2 style="text-align:center; margin-bottom: 30px; font-family: 'Lexend'; color: var(--secondary);">Vrijblijvende Aanvraag</h2>
         <form action="https://formspree.io/f/jouw-id" method="POST">
             <input type="text" name="name" placeholder="Uw Naam" required>
             <input type="email" name="email" placeholder="E-mailadres" required>
@@ -146,7 +151,7 @@
 <footer>
     <div class="container">
         <p>&copy; 2026 Extreme Schoonmaak Service Nederland | extremeschoonmaakservice.nl</p>
-        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">Discretie is onze hoogste prioriteit.</p>
+        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">Professionele reiniging met 100% discretie.</p>
     </div>
 </footer>
 
