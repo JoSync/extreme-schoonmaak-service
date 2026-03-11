@@ -76,20 +76,25 @@
         .section { padding: 80px 0; }
         .bg-light { background-color: var(--bg-light); }
 
-        /* Expertise Grid */
+        /* Expertise Centrerende Grid */
         .grid { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center; /* Dit zorgt voor de centrering van de onderste rij */
             gap: 25px; 
             margin-top: 40px; 
         }
         .card { 
+            flex: 1 1 300px; /* Basisbreedte van 300px */
+            max-width: 350px; /* Zorgt dat ze niet té breed worden */
             padding: 40px; 
             border-radius: 12px; 
             background: var(--white); 
             border: 1px solid #ebecf0;
             border-top: 6px solid var(--primary); 
             transition: 0.3s; 
+            display: flex;
+            flex-direction: column;
         }
         .card:hover { transform: translateY(-5px); box-shadow: 0 12px 24px rgba(0,0,0,0.08); }
         .card h3 { margin-bottom: 15px; font-family: 'Lexend', sans-serif; color: var(--secondary); }
@@ -146,73 +151,4 @@
 <section class="usp-bar">
     <div class="container usp-grid">
         <div class="usp-item"><strong>Team van 5</strong>Specialisten</div>
-        <div class="usp-item"><strong>Heel NL</strong>Landelijke dekking</div>
-        <div class="usp-item"><strong>100% Discreet</strong>Onopvallend materieel</div>
-        <div class="usp-item"><strong>Binnen 24u</strong>Snelle reactie</div>
-    </div>
-</section>
-
-<section class="section container" id="diensten">
-    <h2 style="text-align:center; font-size: 2.5rem; font-family: 'Lexend'; color: var(--secondary);">Onze Expertise</h2>
-    <div class="grid">
-        <div class="card">
-            <h3>Extreme schoonmaak</h3>
-            <p>Grondige reiniging van zwaar vervuilde woningen en panden. Wij verwijderen alle sporen van vervuiling en maken de ruimte weer leefbaar.</p>
-        </div>
-        <div class="card">
-            <h3>Hoarder woningen</h3>
-            <p>Respectvolle aanpak bij verzamelproblematiek. Wij ontruimen, sorteren en reinigen de woning met oog voor de bewoner en eigenaar.</p>
-        </div>
-        <div class="card">
-            <h3>Objectreiniging</h3>
-            <p>Specifieke reiniging van objecten, ruimtes of voertuigen die door extreme omstandigheden onbruikbaar zijn geworden.</p>
-        </div>
-        <div class="card">
-            <h3>Dieptereiniging</h3>
-            <p>Onze dieptereiniging richt zich op keukens, badkamers, vloeren en andere ruimtes waar een normale schoonmaak niet voldoende is. Wij reinigen tot diep in oppervlakken voor een langdurig schoon resultaat.</p>
-        </div>
-        <div class="card">
-            <h3>Geurverwijdering</h3>
-            <p>Hardnekkige geuren zoals rooklucht, schimmel en andere langdurige geurproblemen verwijderen wij effectief. Met gespecialiseerde technieken zorgen wij voor een frisse en schone leefomgeving.</p>
-        </div>
-    </div>
-</section>
-
-<section class="section bg-light">
-    <div class="container about-text">
-        <span class="small-heading">Over ons</span>
-        <h2 class="large-heading">Professioneel, discreet en betrouwbaar</h2>
-        <p>Extreme Schoonmaak Service is gespecialiseerd in het reinigen van zwaar vervuilde woningen en ruimtes. Wij begrijpen dat dit soort situaties vaak gevoelig of stressvol zijn. Daarom werken wij altijd discreet, professioneel en met respect voor de situatie.</p>
-        <p>Ons team beschikt over de juiste kennis, apparatuur en schoonmaakmiddelen om zelfs de meest extreme vervuiling aan te pakken. Van particuliere woningen tot verhuurpanden, wij zorgen dat de ruimte weer schoon en veilig wordt.</p>
-        <p><strong>Wij werken snel, efficiënt en denken altijd mee met de klant.</strong></p>
-    </div>
-</section>
-
-<section id="contact" class="section">
-    <div class="container">
-        <h2 style="text-align:center; margin-bottom: 30px; font-family: 'Lexend'; color: var(--secondary);">Vrijblijvende Aanvraag</h2>
-        <form action="https://formspree.io/f/jouw-id" method="POST">
-            <input type="text" name="name" placeholder="Uw Naam" required>
-            <input type="email" name="email" placeholder="E-mailadres" required>
-            <input type="tel" name="phone" placeholder="Telefoonnummer">
-            <textarea name="message" rows="5" placeholder="Vertel ons kort over de situatie..." required></textarea>
-            <button type="submit" class="btn" style="width:100%">Verstuur Aanvraag</button>
-        </form>
-
-        <div class="contact-details">
-            <p><strong>Plaats:</strong> Utrecht, Nieuwegein</p>
-            <p><strong>Email:</strong> <a href="mailto:info@extremeschoonmaakservice.nl">info@extremeschoonmaakservice.nl</a></p>
-            <p><strong>Tel:</strong> <a href="tel:0640178834">06 40178834</a></p>
-        </div>
-    </div>
-</section>
-
-<footer>
-    <div class="container">
-        <p>&copy; 2026 Extreme Schoonmaak Service Nederland | extremeschoonmaakservice.nl</p>
-        <p style="font-size: 0.9rem; margin-top: 10px; opacity: 0.7;">Professionele reiniging met 100% discretie.</p>
-    </div>
-</footer>
-
-</body>
-</html>
+        <div
