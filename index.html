@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extreme Schoonmaak Service | Discreet & Professioneel</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend:wght@400;600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0052cc;
+            --secondary: #172b4d;
+            --accent: #00a3bf;
+            --bg-light: #f4f5f7;
+            --text-main: #344563;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body { font-family: 'Inter', sans-serif; color: var(--text-main); line-height: 1.6; background-color: #fff; }
+        h1, h2, h3 { font-family: 'Lexend', sans-serif; color: var(--secondary); }
+
+        .container { max-width: 1100px; margin: 0 auto; padding: 0 20px; }
+
+        /* Header & Hero */
+        header { background: #fff; padding: 20px 0; border-bottom: 1px solid #eee; position: sticky; top: 0; z-index: 100; }
+        .nav-content { display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-weight: 700; font-size: 1.2rem; color: var(--primary); text-transform: uppercase; }
+
+        .hero { background: linear-gradient(135deg, #0747a6 0%, #0052cc 100%); color: white; padding: 100px 0; text-align: center; }
+        .hero h1 { color: white; font-size: 2.8rem; margin-bottom: 20px; line-height: 1.2; }
+        .hero p { font-size: 1.2rem; max-width: 800px; margin: 0 auto 30px; opacity: 0.9; }
+
+        /* Buttons */
+        .btn { display: inline-block; padding: 15px 30px; border-radius: 5px; text-decoration: none; font-weight: 600; transition: 0.3s; cursor: pointer; border: none; }
+        .btn-primary { background: #fff; color: var(--primary); }
+        .btn-primary:hover { background: var(--bg-light); transform: translateY(-2px); }
+        .btn-form { background: var(--primary); color: white; width: 100%; font-size: 1.1rem; }
+
+        /* Services Grid */
+        .section { padding: 80px 0; }
+        .section-title { text-align: center; margin-bottom: 50px; }
+        .section-title h2 { font-size: 2.2rem; margin-bottom: 15px; }
+
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { padding: 40px; border-radius: 12px; background: white; border: 1px solid #ebecf0; transition: 0.3s; }
+        .card:hover { border-color: var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .card h3 { margin-bottom: 15px; font-size: 1.4rem; }
+        .icon { font-size: 2.5rem; margin-bottom: 20px; display: block; }
+
+        /* USPs */
+        .usp-bar { background: var(--secondary); color: white; padding: 40px 0; }
+        .usp-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; text-align: center; }
+        .usp-item h4 { color: #fff; font-size: 1.5rem; margin-bottom: 5px; }
+
+        /* Contact Section */
+        .contact-flex { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 50px; }
+        .contact-info h2 { margin-bottom: 20px; }
+        .contact-info p { margin-bottom: 20px; font-size: 1.1rem; }
+        
+        form { background: var(--bg-light); padding: 40px; border-radius: 12px; }
+        .form-group { margin-bottom: 20px; }
+        label { display: block; margin-bottom: 8px; font-weight: 600; }
+        input, textarea { width: 100%; padding: 12px; border: 1px solid #dfe1e6; border-radius: 4px; font-size: 1rem; }
+
+        footer { background: var(--secondary); color: white; padding: 50px 0; text-align: center; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container nav-content">
+        <div class="logo">Extreme Schoonmaak Service</div>
+        <a href="#contact" style="color: var(--primary); font-weight: 700; text-decoration: none;">Bel direct: +31...</a>
+    </div>
+</header>
+
+<section class="hero">
+    <div class="container">
+        <h1>Specialist in extreme schoonmaak van zwaar vervuilde woningen</h1>
+        <p>Wij helpen particulieren, verhuurders en woningcorporaties bij het reinigen van extreem vervuilde ruimtes. Snel, discreet en 100% professioneel.</p>
+        <a href="#contact" class="btn btn-primary">Vraag een gratis offerte aan</a>
+    </div>
+</section>
+
+<section class="section container" id="diensten">
+    <div class="section-title">
+        <h2>Onze Diensten</h2>
+        <p>Professionele oplossingen voor situaties die extra zorg vereisen.</p>
+    </div>
+    <div class="grid">
+        <div class="card">
+            <span class="icon">🧹</span>
+            <h3>Extreme schoonmaak</h3>
+            <p>Grondige reiniging van zwaar vervuilde woningen. Wij verwijderen vuil, afval en bacteriën om de ruimte weer leefbaar te maken.</p>
+        </div>
+        <div class="card">
+            <span class="icon">🧼</span>
+            <h3>Dieptereiniging</h3>
+            <p>Voor keukens, badkamers en vloeren waar normale schoonmaak tekortschiet. Wij gebruiken industriële middelen voor een steriel resultaat.</p>
+        </div>
+        <div class="card">
+            <span class="icon">📦</span>
+            <h3>Hoarder woningen</h3>
+            <p>Discreet en respectvol ontruimen en reinigen van woningen met verzamelproblematiek. Wij werken met aandacht voor de bewoner.</p>
+        </div>
+        <div class="card">
+            <span class="icon">🌬️</span>
+            <h3>Geuroverlast</h3>
+            <p>Hardnekkige geuren zoals rook, schimmel of vervuiling worden bij de bron aangepakt en definitief verwijderd.</p>
+        </div>
+    </div>
+</section>
+
+<section class="usp-bar">
+    <div class="container usp-grid">
+        <div class="usp-item"><h4>Team van 5</h4><p>Gekwalificeerd personeel</p></div>
+        <div class="usp-item"><h4>Heel NL</h4><p>Landelijke dekking</p></div>
+        <div class="usp-item"><h4>100% Discreet</h4><p>Geen reclame op bussen</p></div>
+        <div class="usp-item"><h4>24 Uur</h4><p>Snelle responstijd</p></div>
+    </div>
+</section>
+
+<section id="contact" class="section container">
+    <div class="contact-flex">
+        <div class="contact-info">
+            <h2>Neem contact op</h2>
+            <p>Heeft u te maken met een urgente situatie of wilt u advies? Wij staan klaar om u te helpen. Wij begrijpen de gevoeligheid van deze situaties en werken altijd uiterst discreet.</p>
+            <p><strong>✓ Snel ter plaatse<br>✓ Discreet materieel<br>✓ Vrijblijvende prijsopgave</strong></p>
+        </div>
+        <div id="form-container">
+            <form action="https://formspree.io/f/jouw-id" method="POST">
+                <div class="form-group">
+                    <label>Naam</label>
+                    <input type="text" name="name" required placeholder="Uw naam">
+                </div>
+                <div class="form-group">
+                    <label>E-mailadres</label>
+                    <input type="email" name="email" required placeholder="uw@email.nl">
+                </div>
+                <div class="form-group">
+                    <label>Telefoonnummer</label>
+                    <input type="tel" name="phone" placeholder="06 - 12345678">
+                </div>
+                <div class="form-group">
+                    <label>Bericht</label>
+                    <textarea name="message" rows="4" required placeholder="Beschrijf kort de situatie..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-form">Verstuur Aanvraag</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2026 Extreme Schoonmaak Service Nederland<br>Discretie gegarandeerd.</p>
+    </div>
+</footer>
+
+</body>
+</html>
