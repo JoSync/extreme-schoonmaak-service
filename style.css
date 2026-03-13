@@ -178,3 +178,46 @@ footer strong {
         max-width: 100%;
     }
 }
+/* --- FIX VOOR LOGO OVER FOTO & WITTE BALK --- */
+
+/* 1. Zorg dat de browser geen standaard witruimte toevoegt */
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* 2. De header 'zwevend' maken over de foto */
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background: transparent !important; /* Dwingt doorzichtigheid af */
+}
+
+/* 3. Zorg dat de foto helemaal bovenaan begint */
+.hero {
+    margin-top: 0 !important;
+    padding-top: 160px; /* Ruimte voor het logo zodat tekst niet wordt overlapt */
+}
+
+/* 4. Logo grootte en schaduw voor leesbaarheid */
+.logo-img {
+    height: 90px;
+    width: auto;
+    display: block;
+    margin-left: 20px; /* Een beetje afstand van de linkerkant */
+    filter: drop-shadow(2px 2px 5px rgba(0,0,0,0.5));
+}
+
+/* Aanpassing voor mobiel: logo in het midden en iets kleiner */
+@media (max-width: 768px) {
+    .logo-img {
+        height: 65px;
+        margin: 0 auto; 
+    }
+    .hero {
+        padding-top: 130px;
+    }
+}
