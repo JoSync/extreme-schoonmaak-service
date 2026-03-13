@@ -114,3 +114,44 @@ footer strong {
     .site-header { text-align: center; } /* Centreert logo op mobiel */
     .logo-img { margin: 0 auto; }
 }
+/* --- NIEUWE OVER ONS INDELING --- */
+.about-layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.about-text-content {
+    flex: 3;
+}
+
+.about-text-content p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+}
+
+.about-image-content {
+    flex: 2;
+    max-width: 450px;
+}
+
+.about-image-content img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    display: block;
+}
+
+/* Zorgt dat het op mobiel onder elkaar komt */
+@media (max-width: 768px) {
+    .about-layout {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+    .about-image-content {
+        max-width: 100%;
+    }
+}
