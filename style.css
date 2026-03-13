@@ -83,3 +83,26 @@ input, textarea { width: 100%; padding: 15px; margin-bottom: 20px; border: 1px s
 .contact-details a { color: var(--primary); text-decoration: none; font-weight: 600; }
 
 footer { background: var(--secondary); color: white; padding: 40px 0; text-align: center; }
+/* LOGO STYLING */
+.site-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 0;
+    z-index: 100;
+}
+
+.logo-img {
+    height: 100px; /* Je kunt dit getal aanpassen om het logo groter of kleiner te maken */
+    width: auto;
+    display: block;
+    /* Een subtiele schaduw zorgt dat het logo beter leesbaar is op de foto */
+    filter: drop-shadow(2px 2px 4px rgba(0,0,0,0.3));
+}
+
+@media (max-width: 768px) {
+    .logo-img { height: 70px; }
+    .site-header { text-align: center; } /* Centreert logo op mobiel */
+    .logo-img { margin: 0 auto; }
+}
